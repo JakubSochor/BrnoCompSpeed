@@ -21,9 +21,9 @@ RUN_FOR_VIDEOS = SPLIT_TEST_VIDEOS["A"]
 
 """
 Defines systems and thresholds
-If an error for a system in the set is larger
+If a speed estmiation error for a system in the set is larger
 then the threshold, the trajectory is shown
-WARNING: You need to delete the cachad results (or use -rc argument)
+WARNING: You need to delete the cached results (or use -rc argument)
 """
 SHOW_BAD_FOR_SYSTEMS = set()
 SHOW_BAD_THRESHOLD = 30
@@ -32,9 +32,9 @@ SHOW_BAD_THRESHOLD = 30
 """
 If true, vehicles' trajectories for which the computation
 of intersections wihh measurement lines failes are shown
-WARNING: You need to delete the cachad results (or use -rc argument)
+WARNING: You need to delete the cached results (or use -rc argument)
 """
-SHOW_ERRORS = True
+SHOW_ERRORS = False
 
 
 

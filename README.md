@@ -1,41 +1,49 @@
-BrnoCompSpeed dataset related to publication:
-SOCHOR Jakub et al. BrnoCompSpeed: Comprehensive Dataset for Automatic Single Camera Speed Measurement from Video, IEEE T-ITS 
-Contact: {isochor,herout,ijuranek}@fit.vutbr.cz
+# BrnoCompSpeed dataset evaluation code
 
-Additional information, and bibtex citation can be found at https://medusa.fit.vutbr.cz/traffic/
-If you use this dataset, please cite our paper.
+Dataset published with paper **SOCHOR Jakub et al. BrnoCompSpeed: Comprehensive Dataset for Automatic Single Camera Speed Measurement from Video, IEEE T-ITS**
 
-For information about vehicle types from our country (Czech Republic) you can use:
-COD20K dataset http://www.fit.vutbr.cz/research/groups/graph/PoseEstimation/
-BoxCars21k dataset https://medusa.fit.vutbr.cz/traffic/
+The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/)
 
 
-Structure:
-----------
-code - evaluation code (python2)
-     - configuration is in config.py
-     - to evaluate it simply run eval.py and wait, it will take a while
-     - I STRONGLY recommend to use ipython notebook or other terminal with graph plotting
-     - packages you might have: numpy, scipy, matplotlib, tabulate
+## How to use the code
+
+1. Install **PYTHON2** packages you might NOT have: `numpy, scipy, matplotlib, tabulate`
+1. Download the [dataset](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/) and place the results and dataset folders on the same level as the code folder (root of the repository). 
+2. (Optional) Modify paths in file code/dataset_info.py
+3. Check file code/config.py. The most important variables are `RUN_FOR_SYSTEMS` and `RUN_FOR_VIDEOS`.
+4. Run in code direcotory: `python eval.py` and wait. The results will be computed, shown and cached in results directory. The script `eval.py` has several arguments, so you can use `--help` for explanation of the arguments. I STRONGLY recommend to use ipython, spyder or similar terminals. 
 
 
-dataset - dataset itself, containes videos, mask, screenshots, and pkl file with the ground truth data
-        - the dataset contains extra session0 which was annotated manually and is not included in the paper
-        - the session0 is meant to be as training for all splittings (A,B,C - see the paper)
+## Additional information
+
+* For information about vehicle types from our country (Czech Republic), you can use following datasets:  [COD20K](http://www.fit.vutbr.cz/research/groups/graph/PoseEstimation/), [BoxCars21k](https://medusa.fit.vutbr.cz/traffic/).
+* The dataset itself containes videos, mask, screenshots, and pkl file with the ground truth data
+* The dataset contains extra session0 which was annotated manually and is not included in the paper
+* The session0 is meant to be as training for all the splittings (A,B,C - see the paper)
 
 
+## How to generate your own result JSON files
+* Just place them into appropriate subdirectory in results directory 
+* The JSON files should have same structure as the already existing JSON files
+* The structure of the files should be following:
 
-results - should have same structure as dataset and contain json files with results
-        - the structure of the json file should be following:
-        {
-        "camera_calibration": {"vp1": [x,y], "vp2": [x,y], "pp": [x,y], "scale": lambda}, (see the paper and supplementary pdf for information how this is used)
-        "cars":[
-        	{
-        		"id": number,
-        		"frames", "posX", "posY": each key defining list of positions of the car in the video
-        		posX and posY should contain x,y coordinates of a point of the vehicle which is on the road plane
-        		and frames should contain frame numbers of the reported points. The length of the vectors must be equal.
-        		Examples can be found in the results directory. 
-        	}
-        ]
-        }
+		{
+		        "camera_calibration": 
+					{"vp1": [x,y], 
+					 "vp2": [x,y], 
+                     "pp": [x,y], 
+                     "scale": lambda}, (see the paper and supplementary pdf for information how this is used)
+		        "cars":[
+		        	{
+		        		"id": number,
+		        		"frames", "posX", "posY": each key defining list of positions of the car in the video
+		        		posX and posY should contain x,y coordinates of a point of the vehicle which is on the road plane
+		        		and frames should contain frame numbers of the reported points. The length of the vectors must be equal.
+		        		Examples can be found in the results directory. 
+		        	}
+		        ]
+		        }
+		}
+
+## Contact 
+{isochor,herout,ijuranek}@fit.vutbr.cz
