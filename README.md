@@ -2,12 +2,12 @@
 
 Dataset published with paper **SOCHOR Jakub et al. BrnoCompSpeed: Comprehensive Dataset for Automatic Single Camera Speed Measurement from Video, IEEE T-ITS**
 
-The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/)
+The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/).
 
 
 ## How to use the code
 
-1. Install **PYTHON2** packages you might NOT have: `numpy, scipy, matplotlib, tabulate`
+1. Install **PYTHON2**, packages you might NOT have: `numpy, scipy, matplotlib, tabulate`
 1. Download the [dataset](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/) and place the results and dataset folders on the same level as the code folder (root of the repository). 
 2. (Optional) Modify paths in file code/dataset_info.py
 3. Check file code/config.py. The most important variables are `RUN_FOR_SYSTEMS` and `RUN_FOR_VIDEOS`.
@@ -23,7 +23,7 @@ The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/tra
 
 
 ## How to generate your own result JSON files
-* Just place them into appropriate subdirectory in results directory 
+* Just place them into appropriate subdirectory in the results directory 
 * The JSON files should have same structure as the already existing JSON files
 * The structure of the files should be following:
 
