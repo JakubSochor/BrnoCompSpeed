@@ -1,8 +1,8 @@
 # BrnoCompSpeed dataset evaluation code
 
-Dataset published with paper **SOCHOR Jakub et al. BrnoCompSpeed: Comprehensive Dataset for Automatic Single Camera Speed Measurement from Video, IEEE T-ITS**
+Dataset published with paper **SOCHOR Jakub et al. BrnoCompSpeed: Review of Traffic Camera Calibration and A Comprehensive Dataset for Monocular Speed Measurement, IEEE T-ITS**
 
-The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed-comprehensive-dataset-for-automatic-single-camera-visual-speed-measurement-ieee-t-its/).
+The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/).
 
 
 ## How to use the code
@@ -19,7 +19,7 @@ The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/tra
 * For information about vehicle types from our country (Czech Republic), you can use following datasets:  [COD20K](http://www.fit.vutbr.cz/research/groups/graph/PoseEstimation/), [BoxCars21k](https://medusa.fit.vutbr.cz/traffic/).
 * The dataset itself containes videos, mask, screenshots, and pkl file with the ground truth data
 * The dataset contains extra session0 which was annotated manually and is not included in the paper
-* The session0 is meant to be as training for all the splittings (A,B,C - see the paper)
+* The session0 is meant to be as training for all the splits (A,B,C - see the paper)
 
 
 ## How to generate your own result JSON files
