@@ -24,23 +24,8 @@ def saveCache(cacheFile, data):
     with open(cacheFile, 'wb') as fid:
         cPickle.dump(data, fid, cPickle.HIGHEST_PROTOCOL)
         
-        
-def normalizeVec(v):
-    norm=np.linalg.norm(v)
-    if norm==0:
-        return v
-    return v/norm
-    
-    
-def softmax(row):
-    return np.exp(row)/np.sum(np.exp(row))
-    
 def pointToLineDistance(p, l):
     return abs(np.dot(l,p/p[2]))/np.linalg.norm(l[0:2])
-    
-def isMonotonic(x):
-    dx = np.diff(x)
-    return np.all(dx <= 0) or np.all(dx >= 0)
     
 def pointToLineProjection(l, p):
     p = p/p[-1]
