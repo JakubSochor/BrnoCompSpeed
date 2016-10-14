@@ -8,7 +8,7 @@ The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/tra
 ## How to use the code
 
 1. Install **PYTHON2**, packages you might NOT have: `numpy, scipy, matplotlib, tabulate`
-1. Download the [dataset](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/) and place the results and dataset folders on the same level as the code folder (root of the repository).
+1. Download the [dataset](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/) and place the results and dataset folders from the downloaded archive on the same level as the code folder (root of the repository).
   * TIP: to save disk space use following command to get and unpack the dataset
   * `curl https://medusa.fit.vutbr.cz/traffic/data/2016-ITS-BrnoCompSpeed-full.tar | tar xv`
 2. (Optional) Modify paths in file code/dataset_info.py
