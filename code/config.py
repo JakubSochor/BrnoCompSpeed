@@ -73,7 +73,7 @@ def plotStyleCumulativeHist(systemId):
     elif systemId == "dubska_optimal_scale":
         styleDict["color"] = "#00B0F0"
     elif systemId == "dubska_optimal_scale_vp2":
-        styleDict["color"] = "darksage"
+        styleDict["color"] = "#69793e"
     elif systemId == "dubska_optimal_calib":
         styleDict["color"] = "#A40000"
     elif systemId == "dubska_optimal_calib_vp2":
@@ -93,7 +93,7 @@ def plotStyleErrorHist(systemId):
     elif systemId == "dubska_optimal_scale":
         styleDict["color"] = "#00B0F0"
     elif systemId == "dubska_optimal_scale_vp2":
-        styleDict["color"] = "darksage"
+        styleDict["color"] = "#69793e"
     elif systemId == "dubska_optimal_calib":
         styleDict["color"] = "#A40000"
     elif systemId == "dubska_optimal_calib_vp2":
