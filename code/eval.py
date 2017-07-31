@@ -533,7 +533,8 @@ def showErrorCumHistogram(data, prefix, unit, xlimMax = None):
         errors = data[k]
         hist = np.histogram(errors, bins=bins)[0]/len(errors)
         hist = np.cumsum(hist)
-        plt.semilogx(bins[:-1], hist, label=labelConversion(k), **plotStyleCumulativeHist(k))
+        plt.plot(bins[:-1], hist, label=labelConversion(k), **plotStyleCumulativeHist(k))
+        plt.gca().set_xscale("log")
     plt.legend(loc='lower right')
     plt.gca().yaxis.set_major_locator(MultipleLocator(0.2))
     plt.gca().yaxis.set_minor_locator(MultipleLocator(0.1))

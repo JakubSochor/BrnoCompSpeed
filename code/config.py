@@ -66,18 +66,27 @@ Styles for cumulative histograms
 """
 def plotStyleCumulativeHist(systemId):
     styleDict = {"linewidth":2}
-        
+    styleDict["markevery"] = 0.075
+    styleDict["markersize"] = 10
+
     if systemId == "dubska_bmvc14":
         styleDict["color"] = "black"
-        styleDict["linewidth"] = 3
+        styleDict["marker"] = "o"
     elif systemId == "dubska_optimal_scale":
         styleDict["color"] = "#00B0F0"
+        styleDict["marker"] = "^"
     elif systemId == "dubska_optimal_scale_vp2":
         styleDict["color"] = "#69793e"
+        styleDict["marker"] = "v"
     elif systemId == "dubska_optimal_calib":
         styleDict["color"] = "#A40000"
+        styleDict["marker"] = "d"
     elif systemId == "dubska_optimal_calib_vp2":
         styleDict["color"] = "#FF9900"
+        styleDict["marker"] = "s"
+
+
+
     
     return styleDict
 
