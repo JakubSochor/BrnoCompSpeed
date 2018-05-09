@@ -1,6 +1,6 @@
 # BrnoCompSpeed dataset evaluation code
 
-Dataset published with paper **SOCHOR Jakub et al. BrnoCompSpeed: Review of Traffic Camera Calibration and A Comprehensive Dataset for Monocular Speed Measurement, IEEE T-ITS**
+Dataset published with paper **SOCHOR Jakub et al. Comprehensive Data Set for Automatic Single Camera Visual Speed Measurement, IEEE T-ITS**
 
 The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/).
 
