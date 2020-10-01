@@ -1,4 +1,4 @@
-# BrnoCompSpeed dataset evaluation code
+# BrnoCompSpeed Dataset Evaluation Code
 
 Dataset published with paper **SOCHOR Jakub et al. Comprehensive Data Set for Automatic Single Camera Visual Speed Measurement, IEEE T-ITS**
 
@@ -19,14 +19,14 @@ The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/tra
 ## Additional information
 
 * For information about vehicle types from our country (Czech Republic), you can use following datasets:  [COD20K](http://www.fit.vutbr.cz/research/groups/graph/PoseEstimation/), [BoxCars21k](https://medusa.fit.vutbr.cz/traffic/).
-* The dataset itself containes videos, mask, screenshots, and pkl file with the ground truth data
-* The dataset contains extra session0 which was annotated manually and is not included in the paper
-* The session0 is meant to be as training for all the splits (A,B,C - see the paper)
+* The dataset itself containes videos, mask, screenshots, and pkl file with the ground truth data.
+* The dataset contains extra session0 which was annotated manually and is not included in the paper.
+* The session0 is meant to be as training for all the splits (A,B,C - see the paper).
 
 
 ## How to generate your own result JSON files
-* Just place them into appropriate subdirectory in the results directory 
-* The JSON files should have same structure as the already existing JSON files
+* Just place them into appropriate subdirectory in the results directory.
+* The JSON files should have same structure as the already existing JSON files.
 * The structure of the files should be following:
 
 		{
