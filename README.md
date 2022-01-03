@@ -2,7 +2,8 @@
 
 Dataset published with paper **SOCHOR Jakub et al. Comprehensive Data Set for Automatic Single Camera Visual Speed Measurement, IEEE T-ITS**
 
-The dataset can be downloaded from [our website](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/). BibTeX citation is also on [the site](https://medusa.fit.vutbr.cz/traffic/research-topics/traffic-camera-calibration/brnocompspeed/).
+## Download
+To download the dataset, reach out to Jakub Špaňhel - ispanhel@fit.vutbr.cz. 
 
 
 ## How to use the code
